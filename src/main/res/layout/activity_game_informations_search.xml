@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameInformationsSearchActivity">
+
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="68dp"
+        android:layout_height="54dp"
+        android:background="@drawable/ic_arrow_back"
+        android:contentDescription="back button"
+        android:gravity="center"
+        android:onClick="onBackPressedWithAnimation"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.019" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/game_name"
+            app:layout_constraintVertical_bias="1.0">
+
+            <ImageView
+                android:id="@+id/game_image"
+                android:layout_width="match_parent"
+                android:layout_height="356dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/background" />
+
+            <TextView
+                android:id="@+id/game_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/game_image"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/grey2"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="-20dp"
+                android:text="Mafia II "
+                android:textSize="38sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/game_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/game_image"
+                android:layout_marginTop="20dp"
+                android:padding="20dp"
+                android:text="Mafia II is the second game in the franchise about Italian mafia operating in America after World War II. Vito Scalleta returns from the war in Italy being wounded. As he returns and reunites with his friend Joe, he and Henry Tomassino convince Vito to be apart of an Italian mafia in fictional city Empire Bay. Starting to work for Alberto Clemente, Vito must go through every aspect of being a part of the family and become a big thing in it.\n\nEven though the game has an open world mechanic, you wont probably explore it. Travelling to missions give an opportunity to listen to music of this time in America - Chuck Berry, Muddy Waters, Dean Martin and others, providing the game with a great atmosphere of the USA in its 50s. The gameplay has a variety of missions to offer, in which you can confront your enemies in melee combat, shoot them with different guns like M1911 or Thompson, or stealthily engaging your opponents."
+                android:textSize="16sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/game_rating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/game_description"
+                android:padding="16dp"
+                android:text="Rating :  4.22/5"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/game_playtime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/game_rating"
+                android:padding="16dp"
+                android:text="Average Playtime :  13 hours"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/game_releaseDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/game_playtime"
+                android:padding="16dp"
+                android:text="Release Date :  2010-08-24  "
+                android:textSize="16sp" />
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

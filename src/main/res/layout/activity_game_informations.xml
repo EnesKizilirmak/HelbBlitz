@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameInformationsActivity">
+
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="68dp"
+        android:layout_height="54dp"
+        android:background="@drawable/ic_arrow_back"
+        android:contentDescription="back button"
+        android:gravity="center"
+        android:onClick="onBackPressedWithAnimation"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.019" />
+
+    <Button
+        android:id="@+id/favorite_button_image"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/favorite_non_rempli"
+        android:contentDescription="back button"
+        android:gravity="center"
+        android:onClick="onBackPressedWithAnimation"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.96"
+        app:layout_constraintVertical_bias="0.029" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/game_name"
+            app:layout_constraintVertical_bias="1.0">
+
+            <ImageView
+                android:id="@+id/game_image"
+                android:layout_width="match_parent"
+                android:layout_height="356dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/helb_blitz_logo" />
+
+            <TextView
+                android:id="@+id/game_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/game_image"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/grey2"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="-20dp"
+                android:text="Game : "
+                android:textSize="38sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/game_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/game_name"
+                android:padding="20dp"
+                android:layout_marginTop="20dp"
+                android:text="game_description_blabla"
+                android:textSize="16sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/game_rating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/game_description"
+                android:padding="16dp"
+                android:text="game_rating_blalba"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/game_playtime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/game_rating"
+                android:padding="16dp"
+                android:text="game_playtime_placeholder"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/game_releaseDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/game_playtime"
+                android:padding="16dp"
+                android:text="game_release_date : blabla "
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/post_score_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_below="@id/game_releaseDate"
+                android:padding="16dp"
+                android:text="register your best score "
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/speedrun_score_table"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/post_score_button"
+                android:layout_marginTop="0dp"
+                android:padding="16dp"
+                android:text="Speedrun ranking : "
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/score_infos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/post_score_button"
+                android:text="Playername : Score ... "
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="50dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/post_score_button" />
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

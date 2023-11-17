@@ -1,0 +1,60 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color for the app -->
+        <item name="colorPrimary">@color/crimson</item>
+        <item name="colorPrimaryVariant">@color/crimson</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- Secondary brand color for the app -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+
+        <!-- Status bar color -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+
+        <!-- Text color -->
+        <item name="android:textColorPrimary">@color/grey1</item>
+    </style>
+
+    <style name="AppTheme.Light">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="SplashScreen" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/splashscreen_helb_blitz</item>
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimary</item>
+    </style>
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_in</item>
+        <item name="android:windowExitAnimation">@anim/slide_out</item>
+    </style>
+
+    <!-- Style pour ma nav bar left -->
+    <style name="NavigationViewStyle" parent="Widget.Design.NavigationView">
+        <item name="android:background">@color/black</item>
+        <item name="itemIconTint">@color/grey2</item>
+        <item name="itemTextColor">@color/grey2</item>
+        <item name="android:textColorSecondary">@color/grey2</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!-- Style de thème bleu -->
+    <style name="BlueTheme" parent="Theme.MaterialComponents.Light">
+        <item name="colorPrimary">@color/bluePrimary</item>
+        <item name="colorPrimaryDark">@color/bluePrimaryDark</item>
+        <item name="colorAccent">@color/blueAccent</item>
+    </style>
+
+    <!-- Style de thème vert -->
+    <style name="GreenTheme" parent="Theme.MaterialComponents.Light">
+        <item name="colorPrimary">@color/greenPrimary</item>
+        <item name="colorPrimaryDark">@color/greenPrimaryDark</item>
+        <item name="colorAccent">@color/greenAccent</item>
+    </style>
+
+</resources>

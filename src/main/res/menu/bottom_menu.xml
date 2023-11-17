@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_main"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/map"
+        android:icon="@drawable/ic_map"
+        android:title="Map" />
+
+    <item
+        android:title="" /> <!-- Celui la c'est pour le search mais on le laisse vide car on va
+         utiliser un bouton qui flotte ("fab") mais on crée quand meme un item pour qu'il se trouve
+         au millieu de l'écran ! -->
+
+    <item
+        android:id="@+id/settings"
+        android:icon="@drawable/ic_settings"
+        android:title="Settings" />
+    <item
+        android:id="@+id/userprofile"
+        android:icon="@drawable/ic_userprofile"
+        android:title="Profile" />
+
+</menu>

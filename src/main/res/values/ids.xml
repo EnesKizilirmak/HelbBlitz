@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="search_button_icon" type="id" />
+    <item name="notifications_button_icon" type="id" />
+    <item name="favoris_button_icon" type="id" />
+    <item name="settings_button_icon" type="id" />
+    <item name="map_button_icon" type="id" />
+    <item name="userprofile_button_icon" type="id" />
+</resources>

@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">Helb Blitz</string>
+
+    <string name="open_nav">Open Navigation Drawer</string>
+    <string name="close_nav">Close Navigation Drawer</string>
+
+    <string name="log_in">Log In</string>
+    <string name="continue_as_guest">Continue as guest</string>
+    <string name="helb_blitz">Helb Blitz !</string>
+    <string name="api_title">API : title</string>
+    <string name="api_description">API : Description</string>
+    <string name="email">Email :</string>
+    <string name="todo">TODO</string>
+    <string name="name">Name :</string>
+    <string name="_2023_tous_droits_r_serv_s">© 2023, Tous droits réservés</string>
+    <string name="logout">LogOut</string>
+    <string name="image_provenant_d_une_api">Image provenant d\'une API</string>
+    <string name="welcome_back">Welcome back !</string>
+    <string name="email_">Email</string>
+    <string name="password">Password</string>
+    <string name="log_in_">Log In</string>
+    <string name="don_t_have_an_account_sign_up">Don\'t have an account? Sign Up</string>
+    <string name="_2023_tous_droits">© 2023, Tous droits réservés</string>
+    <string name="join_us">Join us !</string>
+    <string name="username">Username</string>
+    <string name="email_EditText">Email</string>
+    <string name="password_EditText">Password</string>
+    <string name="confirm_password_EDT">Confirm Password</string>
+    <string name="i_consent_to_providing_my_personal_data_in_accordance_with_the_rgpd_regulations">I consent to providing my personal data in accordance with the RGPD regulations.</string>
+    <string name="already_have_an_account_log_in">Already have an account? Log In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="_2023_tous_droits_r_serv_TXTV">© 2023, Tous droits réservés</string>
+    <string name="scrollview">ScrollView_</string>
+    <string name="scrollable_area">scrollable_area</string>
+    <string name="settings_icon" />
+    <string name="main_icon" />
+    <string name="favoris_icon" />
+    <string name="search_icon" />
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_about">AboutActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+
+</resources>
